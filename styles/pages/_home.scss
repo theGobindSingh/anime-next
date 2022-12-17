@@ -1,0 +1,68 @@
+#home {
+  .slick-list {
+    height: 90vh;
+    width: 100%;
+
+    .slick-track {
+      height: 100%;
+      & > div {
+        height: 100%;
+        & > div {
+          height: 100%;
+          .slide {
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10vw;
+            & > * {
+              margin: 10px 0;
+            }
+            h2 {
+              width: 100%;
+              font-size: 6rem;
+              text-transform: uppercase;
+              color: white;
+              text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black,
+                0 0 2px black, 0 0 2px black;
+              margin: 0;
+            }
+            a {
+              font-weight: bold;
+              text-shadow: 0 0 1px black;
+              font-size: 1rem;
+              font-family: var(--font-sans);
+              color: white;
+              background-color: red;
+              width: fit-content;
+              padding: 10px 25px;
+              border-radius: 10px;
+              letter-spacing: 3px;
+            }
+            span {
+              font-family: var(--font-mono);
+              font-size: 2rem;
+              font-weight: bold;
+              text-shadow: 0 0 1px white, 0 0 1px white;
+            }
+            p {
+              font-size: 1rem;
+              color: white;
+              text-shadow: 0 0 10px black, 0 0 2px black;
+              width: 60vw;
+              padding-left: 10px;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              display: block;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}

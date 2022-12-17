@@ -1,0 +1,50 @@
+#main-header {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  height: var(--main-header-height);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  & > * {
+    margin: 0 20px;
+    text-transform: uppercase;
+  }
+  .search-container {
+    position: relative;
+    height: auto;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px 15px;
+    border: 1px solid grey;
+    input {
+      border: none;
+      width: 80%;
+      height: 100%;
+      background: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    &:has(input:focus) {
+      border: 2px solid black;
+    }
+    &::after {
+      width: 20%;
+      content: "🔍";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

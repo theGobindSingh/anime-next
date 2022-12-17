@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400;500;600;700;800;900&family=Cutive+Mono&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Cinzel', serif;
+// font-family: 'Cutive Mono', monospace;
+// font-family: 'Lobster', cursive;
+// font-family: 'Lobster Two', cursive;
+// font-family: 'Playball', cursive;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Sorts Mill Goudy', serif;
+:root {
+  --font-sans-serif: "Poppins", sans-serif;
+  --font-sans: "Sorts Mill Goudy", "Georgia", serif;
+  --font-cursive-1: "Lobster", cursive;
+  --font-cursive-2: "Lobster Two", cursive;
+  --font-cursive-3: "Playball", cursive;
+  --font-heading: "Abril Fatface", "Poppins", sans-serif;
+  --font-mono: "Cutive Mono", monospace;
+
+  --accent-color: hsl(33, 22%, 90%);
+  --footer-dark: #14191f;
+  --text-grey: rgba(70, 70, 70, 1);
+
+  --main-header-height: 7.5vh;
+  --main-footer-height: 5vh;
+}

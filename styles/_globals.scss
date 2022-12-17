@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans-serif);
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+#__next {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  // &::before {
+  //   content: "";
+  //   height: var(--main-header-height);
+  //   width: 100%;
+  // }
+  & > section {
+    min-height: calc(
+      100vh - var(--main-header-height) - var(--main-footer-height)
+    );
+  }
+}

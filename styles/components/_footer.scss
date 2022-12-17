@@ -1,0 +1,14 @@
+#main-footer {
+  height: var(--main-footer-height);
+  width: 100%;
+  background-color: black;
+  color: white;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
