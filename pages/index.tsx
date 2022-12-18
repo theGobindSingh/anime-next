@@ -78,18 +78,19 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const fromJiken = await axios.get(
     "https://api.jikan.moe/v4/top/anime?type=tv&filter=bypopularity&limit=5"
   );
-  var imgSrcArr: any[] = [];
+  var imgSrcArr: string[] = [];
 
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
+
   for (let index: number = 0; index < fromJiken.data?.data.length; index++) {
     let anime: any = fromJiken.data?.data[index];
     const page = await browser.newPage();
     await page.goto(
       "https://www.wallpaperflare.com/search?wallpaper=" +
-        String(anime?.title_english).replaceAll(" ", "+")
+        anime.title_english.replaceAll(" ", "+")
     );
-    await page.waitForSelector("main img.lazy.loaded");
     try {
+      await page.waitForSelector("main img.lazy.loaded");
       var img: any = await page.evaluate(() => {
         var elem = document.querySelector("main img.lazy");
         if (elem != null) {
